@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="background-image">
+            <!-- Background image -->
+            <h1>Welcome to XYZ Hospital</h1>
+            <p>Providing quality healthcare services</p>
+            <a href="#services" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <!-- Service sections -->
+            <div class="service">
+                <h3>Emergency Care</h3>
+                <p>Description of emergency care services...</p>
+                <a href="#contact" class="btn">Contact Us</a>
+            </div>
+            <!-- More service sections here -->
+        </div>
+    </section>
+
+    <section id="doctors" class="section">
+        <h2>Meet Our Doctors</h2>
+        <div class="doctors-container">
+            <!-- Doctor profiles -->
+            <div class="doctor">
+                <img src="doctor1.jpg" alt="Doctor Name">
+                <h3>Doctor Name</h3>
+                <p>Specialty:...</p>
+            </div>
+            <!-- More doctor profiles here -->
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 XYZ Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+CSS (styles.css):
+
+css
+Copy code
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.background-image {
+    background-image: url('hospital-image.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
